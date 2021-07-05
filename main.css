@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+body{
+  background: #659DBD;
+  color: #FBEEC1;
+  font-family: 'Roboto';
+
+}
+
+.title{
+    text-align: center;
+    margin:20px;
+}
+
+.logo{
+  width: 50px;
+  padding: 5px;
+}
+.navbar {
+ background: #DFE0D4;
+}
+.nav-link,
+.navbar-brand {
+ color: #FF5335;
+ cursor: pointer;
+}
+.center{
+  float: none;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FF5335;
+  font-size: 1.5rem;
+}
+.nav-link {
+ margin-right: 1em !important;
+}
+.nav-link:hover {
+ color: #DFE0D4;
+ background: #FF5335;
+}
+.navbar-collapse {
+ justify-content: flex-end;
+
+}
+
+.overlay {
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(0, 0, 0, 0.7);
+}
+.description {
+ left: 50%;
+ position: absolute;
+ top: 45%;
+ transform: translate(-50%, -55%);
+ text-align: center;
+}
+.description h3 {
+ color: #fc3030;
+ margin: 40px;
+}
+.description p {
+ color: #fff;
+ font-size: 1.3rem;
+ line-height: 1.5;
+ text-align: justify;
+
+}
+.description b{
+  color: #FF5335;
+}
+
+.row img {
+ -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+ -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+ box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+ margin-bottom: 16px;
+ width: 100%;
+ height: 100%;
+}
+.col-sm-5{
+  margin: auto;
+  color: #353940;
+}
+
+button {
+  margin: 10px;
+  border: 2px solid #DFE0D4;
+  background-color: #FF5335;
+  color: #DFE0D4;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #DFE0D4;
+  color: #FF5335;
+  border: 2px solid #FF5335;
+}
+
+
+.header {
+ background-image: url('https://intl.upm.edu.my/upload/imej/kandungan/mobile/20200506113326Slide3.JPG');
+ background-size: cover;
+ background-position: center;
+ position: relative;
+}
+.overlay {
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(0, 0, 0, 0.6);
+}
+.features {
+ margin: 15em auto;
+ padding: 1em;
+ position: relative;
+}
+.feature-title {
+ color: #333;
+ font-size: 1.3rem;
+ font-weight: 700;
+ margin-bottom: 20px;
+ text-transform: uppercase;
+}
+.features p{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.features img {
+ -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+ -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+ box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+ margin-bottom: 16px;
+}
+.features .form-control,
+.features input {
+ border-radius: 0;
+}
+.features .btn {
+ background-color: #589b37;
+ border: 1px solid #589b37;
+ color: #fff;
+ margin-top: 20px;
+}
+.features .btn:hover {
+ background-color: #333;
+ border: 1px solid #333;
+}
+.description {
+ left: 50%;
+ position: absolute;
+ top: 45%;
+ transform: translate(-50%, -55%);
+ text-align: center;
+}
+.description h1 {
+ color: #FF5335;
+ font-size: 8rem;
+}
+.description p {
+ color: #fff;
+ font-size: 2rem;
+ line-height: 1.5;
+  text-align: center;
+}
+.button{
+  margin: 0;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+background-color: #FF5335;
+border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+font-size: 16px;
+margin: 4px 2px;
+opacity: 0.6;
+transition: 0.3s;
+display: inline-block;
+text-decoration: none;
+cursor: pointer;
+}
+.ending{
+  background-color: #3E92A3;
+    padding: 25px;
+    height: 30%;
+    width: 100%;
+}
+.info{
+  text-align: center;
+  font-size: 18px;
+  padding: 70px;
+}
+.info  h2{
+  text-align: center;
+  font-weight: bold;
+}
+.question{
+  padding: 40px;
+  column-count: 3;
+  column-gap: 40px;
+}
+
+
+
+.dropbtn {
+  background-color: #DFE0D4;
+  color: #FF5335;
+  font-size: 16px;
+  padding: 0px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #FF5335}
+
+.dropdown:hover .dropdown-content {
+  color: #DFE0D4;
+  background: #DFE0D4;
+  display: block;
+  border: none;
+}

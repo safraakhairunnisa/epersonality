@@ -1,0 +1,59 @@
+--database name: e_personality 
+
+create table student(
+id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+studentID varchar(10),
+password varchar(255),
+name varchar(255),
+email varchar(255),
+course varchar(255),
+faculty varchar(255),
+college varchar(255));
+
+create table counselor(
+id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+staffID varchar(10),
+password varchar(255),
+name varchar(255),
+email varchar(255));
+
+CREATE TABLE tbl_token_auth (
+  id int(11) NOT NULL,
+  userid varchar(10) NOT NULL,
+  password_hash varchar(255) NOT NULL,
+  selector_hash varchar(255) NOT NULL,
+  is_expired int(11) NOT NULL DEFAULT '0',
+  expiry_date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE tbl_token_auth
+  ADD PRIMARY KEY (id);
+
+ALTER TABLE tbl_token_auth
+  MODIFY id int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `student` DROP `id`;
+ALTER TABLE `student` ADD PRIMARY KEY(`studentID`);
+
+ALTER TABLE `staff` DROP `id`;
+ALTER TABLE `counselor` ADD PRIMARY KEY(`staffID`);
+
+INSERT INTO `counselor`( `staffID`, `password`, `name`, `email`) VALUES ('123','$2a$10$0FHEQ5/cplO3eEKillHvh.y009Wsf4WCKvQHsZntLamTUToIBe.fG','Dr Taehyung','taehyung@gmail.com');
+INSERT INTO `student`(`studentID`, `password`, `name`, `email`, `course`, `faculty`, `college`) VALUES ('232323','$2a$10$0FHEQ5/cplO3eEKillHvh.y009Wsf4WCKvQHsZntLamTUToIBe.fG','Kim Taehyung','kth@gmail.com','Bachelor of Software Engineering','FSKTM','KC');
+
+Create table score (
+id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+studentid varchar(10),
+e int,
+a int,
+c int,
+n int,
+o int,
+date date
+);
+
+ALTER TABLE score
+ADD FOREIGN KEY (studentid) REFERENCES student(studentid);
+ALTER TABLE `score` CHANGE `date` `date` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP;
+
+INSERT INTO `score`( `studentid`, `e`, `a`, `c`, `n`, `o`) VALUES ('232323','3','6','9','12','15');
