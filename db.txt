@@ -38,8 +38,10 @@ ALTER TABLE `student` ADD PRIMARY KEY(`studentID`);
 ALTER TABLE `staff` DROP `id`;
 ALTER TABLE `counselor` ADD PRIMARY KEY(`staffID`);
 
-INSERT INTO `counselor`( `staffID`, `password`, `name`, `email`) VALUES ('123','$2a$10$0FHEQ5/cplO3eEKillHvh.y009Wsf4WCKvQHsZntLamTUToIBe.fG','Dr Taehyung','taehyung@gmail.com');
-INSERT INTO `student`(`studentID`, `password`, `name`, `email`, `course`, `faculty`, `college`) VALUES ('232323','$2a$10$0FHEQ5/cplO3eEKillHvh.y009Wsf4WCKvQHsZntLamTUToIBe.fG','Kim Taehyung','kth@gmail.com','Bachelor of Software Engineering','FSKTM','KC');
+INSERT INTO `counselor`( `staffID`, `password`, `name`, `email`) VALUES ('12345','$2a$10$0FHEQ5/cplO3eEKillHvh.y009Wsf4WCKvQHsZntLamTUToIBe.fG','Dr Strange','strange@gmail.com');
+-- password: admin
+INSERT INTO `student`(`studentID`, `password`, `name`, `email`, `course`, `faculty`, `college`) VALUES ('232323','$2y$10$kjRHzrbtT16HJWuuiXGJkOBG56P7CJhwbd/Ti.xwekia91OfGoxjG','Hanisah','hanisah@gmail.com','Bachelor of Software Engineering','FSKTM','KC');
+--password: hanisah
 
 Create table score (
 id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
